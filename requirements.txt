@@ -1,0 +1,22 @@
+# Core ML and Deep Learning
+torch>=2.0.0
+transformers>=4.30.0
+numpy>=1.21.0
+scipy>=1.7.0
+scikit-learn>=1.0.0
+
+# Data Processing
+PyYAML>=6.0
+
+# Progress Bars and CLI
+tqdm>=4.62.0
+fire>=0.4.0
+
+# Evaluation Framework
+lm-eval>=0.4.0
+
+
+# Additional utilities
+regex>=2022.0.0
+datasets>=2.0.0
+accelerate>=0.20.0

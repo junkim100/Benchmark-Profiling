@@ -1,0 +1,69 @@
+settings:
+  cuda_visible_devices: 0,1,2,3,4,5,6,7
+  train_batch_size: 4
+  gradient_accumulation_steps: 2
+  eval_batch_size: 8
+  k_values: [
+    0.00001,
+    0.00004,
+    0.00016,
+    0.00064,
+    0.00256,
+    0.01024
+  ]
+  front_removal: 0
+  back_removal: 0
+
+evals:
+  benchmarks: ["Analogical_Reasoning","Commonsense_Causal","Contextual_Recall","Deductive_Reasoning","Inductive_Reasoning","Long_Term_Knowledge","Quantitative_Reasoning","Semantic_Relationship","Spatial_Reasoning","Temporal_Reasoning"]
+  num_fewshot: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+models:
+  - name: meta-llama/Llama-3.1-8B-Instruct
+    tokenizer: llama3.1
+  # - name: Qwen/Qwen2.5-7B-Instruct
+  #   tokenizer: qwen2.5
+  # - name: mistralai/Mistral-7B-Instruct-v0.3
+  #   tokenizer: mistralv0.3
+
+datasets:
+  - name: Analogical_Reasoning
+    path: ./data_preprocess/datasets/Analogical_Reasoning/original
+    key: context,question,answer
+
+  - name: Commonsense_Causal
+    path: ./data_preprocess/datasets/Commonsense_&_Causal/original
+    key: context,question,answer
+
+  - name: Contextual_Recall
+    path: ./data_preprocess/datasets/Contextual_Recall/original
+    key: context,question,answer
+
+  - name: Deductive_Reasoning
+    path: ./data_preprocess/datasets/Deductive_Reasoning/original
+    key: context,question,answer
+
+  - name: Inductive_Reasoning
+    path: ./data_preprocess/datasets/Inductive_Reasoning/original
+    key: context,question,answer
+
+  - name: Long_Term_Knowledge
+    path: ./data_preprocess/datasets/Long_Term_Knowledge/original
+    key: context,question,answer
+
+  - name: Quantitative_Reasoning
+    path: ./data_preprocess/datasets/Quantitative_Reasoning/original
+    key: context,question,answer
+
+  - name: Semantic_Relationship
+    path: ./data_preprocess/datasets/Semantic_Relationship_Comprehension/original
+    key: context,question,answer
+
+  - name: Spatial_Reasoning
+    path: ./data_preprocess/datasets/Spatial_Reasoning/original
+    key: context,question,answer
+
+  - name: Temporal_Reasoning
+    path: ./data_preprocess/datasets/Temporal_Reasoning/original
+    key: context,question,answer
+
