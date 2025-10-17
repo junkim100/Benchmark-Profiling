@@ -4,7 +4,7 @@ This repository contains the code for the EMNLP 2025 main paper "Benchmark Profi
 
 ## 📄 Paper
 
-**Paper Link:** [https://openreview.net/forum?id=Tm3tnpIjpm](https://openreview.net/forum?id=Tm3tnpIjpm)
+**Paper Link:** [https://arxiv.org/abs/2510.01232](https://arxiv.org/abs/2510.01232)
 
 ## 🎯 Overview
 
