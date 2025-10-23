@@ -1,10 +1,10 @@
 # EMNLP 2025: Benchmark Profiling: Mechanistic Diagnosis of LLM Benchmarks
 
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![arXiv](https://img.shields.io/badge/arXiv-2510.01232-b31b1b.svg)](https://arxiv.org/abs/2510.01232)
+
 This repository contains the code for the EMNLP 2025 main paper "Benchmark Profiling: Mechanistic Diagnosis of LLM Benchmarks". Our work introduces a novel approach to understanding how large language models (LLMs) process different types of reasoning tasks by analyzing the internal mechanisms that drive benchmark performance.
-
-## 📄 Paper
-
-**Paper Link:** [https://arxiv.org/abs/2510.01232](https://arxiv.org/abs/2510.01232)
 
 ## 🎯 Overview
 
@@ -174,12 +174,11 @@ Our approach consists of four main stages:
 If you use this code or find our work helpful, please cite:
 
 ```bibtex
-@inproceedings{kim2025benchmark,
+@article{kim2025benchmark,
   title={Benchmark Profiling: Mechanistic Diagnosis of LLM Benchmarks},
-  author={Kim, Dongjun and others},
-  booktitle={Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing},
-  year={2025},
-  url={https://openreview.net/pdf?id=Tm3tnpIjpm}
+  author={Kim, Dongjun and Shim, Gyuho and Chun, Yongchan and Kim, Minhyuk and Park, Chanjun and Lim, Heuiseok},
+  journal={arXiv preprint arXiv:2510.01232},
+  year={2025}
 }
 ```
 
